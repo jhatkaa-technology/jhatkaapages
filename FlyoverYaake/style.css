@@ -1,0 +1,88 @@
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+
+:root {
+    --bgColor: #f2ad9d;
+    --accentColor: #e8282a;
+    --font: 'Barlow', sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    border: 3px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: var(--accentColor);
+}
+
+#userName{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links{
+    max-width: 1200vw;
+    width: 90%;
+    display: block;
+    margin: 27px auto;
+
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: white;
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    font-weight:bold;
+	
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 1000%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.unstyled-button {
+  border: none;
+  padding: 0;
+  background: none;
+}
